@@ -1,0 +1,460 @@
+
+#bfSecondaryTabs > li{
+	background-image: url('//abuty.com/assets/abuty/images/whitetransparent.png');
+	color: #08215A;
+	display: inline-block;
+	float: left;
+	font-size: 13px;
+	position: relative;
+}
+
+.rpc_msg_ok{
+	background-image: url('//abuty.com/assets/abuty/images/greentransparent.png');
+	border-bottom: 1px solid #7F8567;
+	border-left: 1px solid #7F8567;
+	border-radius-bottom-left: 8px;
+	border-radius-bottom-right: 8px;
+	border-right: 1px solid #7F8567;
+	color: #FFF;
+	font-family: Gill, Helvetica, sans-serif;
+	font-size: 14px;
+	left: 0;
+	line-height: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	moz-border-radius-bottomleft: 8px;
+	moz-border-radius-bottomright: 8px;
+	padding: 10px 3px 3px;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0;
+	webkit-border-bottom-left-radius: 8px;
+	webkit-border-bottom-right-radius: 8px;
+	z-index: 2000000001;
+}
+.rpc_msg_warn{
+	background-color: #fff;
+	border-bottom: 1px solid #F65D20;
+	border-left: 1px solid #F65D20;
+	border-radius-bottom-left: 8px;
+	border-radius-bottom-right: 8px;
+	border-right: 1px solid #F65D20;
+	color: #000;
+	font-family: Gill, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	left: 0;
+	line-height: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	moz-border-radius-bottomleft: 8px;
+	moz-border-radius-bottomright: 8px;
+	padding: 10px 3px 3px;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0;
+	webkit-border-bottom-left-radius: 8px;
+	webkit-border-bottom-right-radius: 8px;
+	z-index: 2000000001;
+}
+.rpc_msg_err{
+	background-color: #900;
+	border-bottom: 1px solid #900;
+	border-left: 1px solid #900;
+	border-radius-bottom-left: 8px;
+	border-radius-bottom-right: 8px;
+	border-right: 1px solid #900;
+	color: #fff;
+	font-family: Gill, Helvetica, sans-serif;
+	font-size: 12px;
+	left: 0;
+	line-height: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	moz-border-radius-bottomleft: 8px;
+	moz-border-radius-bottomright: 8px;
+	padding: 3px;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0;
+	webkit-border-bottom-left-radius: 8px;
+	webkit-border-bottom-right-radius: 8px;
+	z-index: 2000000001;
+}
+
+
+
+
+.disabled{
+	visibility: hidden;
+}
+.next{
+	float: right;
+}
+.bfControlPanelAlwaysVisibleTrim {
+    background-color: #cc4b37;
+    /* text-align: center; */
+    /* height: fit-content; */
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    /* border-bottom-left-radius: 50px; */
+    /* border-bottom-right-radius: 50px; */
+    border: 1px solid #7f8567;
+    border-top: 0px;
+    display: inline-table;
+    /* position: absolute; */
+}
+a.edit_link{
+	background-image: url('//abuty.com/assets/abuty/images/edit_linkbg.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	color: #fff;
+	cursor: pointer;
+	padding-left: 20px;
+	text-decoration: none;
+}
+a.edit_link:hover{
+	background-image: url('//abuty.com/assets/abuty/images/edit_linkbg.png');
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+
+#bigfoot a.open {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+}
+#bigfoot a.open:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+#bfPanel_lc{
+	display: block;
+	float: left;
+	margin:auto;
+	text-align: center;
+	width: 180px;
+}
+#bfPanel label {
+	text-align: right;
+	padding-right: 20px;
+	margin: -2px;
+}
+#bfPanel input{
+
+	border: 1px solid #e9e9e9;
+	/*border: 1px solid #7F8567;
+	height: 24px;
+	margin: 4px;
+	padding: 0;
+	*/
+}
+#bfPanel textarea{
+	all: unset;
+	width: 99%;
+	border: 1px solid #e9e9e9;
+	min-height: 70px;
+}
+#bfPanel select{
+	all: unset;
+	background: transparent;
+	border: 1px solid #e9e9e9;
+}
+#bfPanel a {
+	
+	text-decoration: none;
+}
+#bfPanel a:hover{
+	color: #7F8567;
+}
+#bfPanel label{
+	/*color: #000;
+	display: inline-block;
+	line-height: 1.5;
+	margin: 4px;
+	padding-left: 2px;
+	width: 85px;
+	*/
+}
+#bfPanel .head  {
+	border-bottom: 5px solid #9ca6bd;
+    font-size: 1.4em;
+    padding-left: 8px;
+    background-color: #9ca6bd42;
+    border-top: 0px solid #989898;
+}
+#bfPanel ul{
+	all: unset;
+	margin: 0;
+	min-width: 260px;
+	padding: 4px;
+	text-decoration: none;
+	white-space:nowrap;
+}
+#bfPanel li{
+	list-style: none;
+	margin: auto;
+	display: inline-block;
+}
+#bf_leftnav_container{
+	all: unset;
+	border-bottom-left-radius: 10px;
+	border-right: 1px solid #08215A;
+	margin: 0;
+	moz-border-radius-bottomleft: 10px;
+	text-align: center;
+	webkit-border-bottom-left-radius: 10px;
+	width: 184px;
+}
+#bf_leftnav {
+	background-image: url('//abuty.com/assets/abuty/images/bluetransparent.png');
+	background-repeat: repeat;
+	border-bottom-left-radius: 11px;
+	margin: auto;
+	min-height: 147px;
+	moz-border-radius-bottomleft: 11px;
+	text-align: center;
+	webkit-border-bottom-left-radius: 11px;
+	width: 183px;
+}
+#bf_leftnav li{
+	list-style: none;
+	margin: auto;
+	width: auto;
+}
+.item{
+	border: 0;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	margin: 0;
+	overflow: : hidden;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: left;
+}
+.item:nth-of-type(odd){
+	background-image: url('//abuty.com/assets/abuty/images/whitetransparent.png');
+	color: #08215A;
+}
+.item:nth-of-type(even){
+	color: #08215A;
+}
+#bf_leftnav_search{
+	border-bottom: 1px solid #08215A;
+	margin: 0;
+	padding: 0;
+	width: 184px;
+}
+#bf_leftnav_search input{
+	all: unset;
+	background: url('//abuty.com/assets/abuty/images/magnifying_glass.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	border: 0;
+	border-bottom: 0 solid #08215A;
+	border-right: 0 solid #08215A;
+	margin: 0;
+	outline: none;
+	padding: 0;
+	text-decoration: italic;
+	width: 185px;
+}
+#bfPanels{
+	left: 185px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: auto;
+}
+#bfPanel select {
+	padding: 0px;
+	width: auto;
+}
+#bf_settings{
+	height: 216px;
+	padding: 2px;
+}
+#bf_preview{
+	background-image: url('//abuty.com/assets/abuty/images/diagbgwhite.png');
+	border: 0 solid #7F8567;
+	border-left: 1px solid #CCC;
+	float: right;
+	margin: 0 1px 1px 0;
+	min-height: 284px;
+	moz-border-radius-topleft: 9px;
+	moz-border-radius-topright: 9px;
+	padding: 0 0 0 1px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 26px;
+	webkit-border-bottom-left-radius: 0;
+	webkit-border-bottom-right-radius: 9px;
+	webkit-border-top-left-radius: 0;
+	webkit-border-top-right-radius: 0;
+}
+.fullheight{
+	border: 0 solid #7F8567;
+	border-right: 0;
+	border-top: 0;
+	moz-border-radius-topleft: 9px;
+	moz-border-radius-topright: 9px;
+	webkit-border-bottom-left-radius: 0;
+	webkit-border-bottom-right-radius: 9px;
+	webkit-border-top-left-radius: 0;
+	webkit-border-top-right-radius: 0;
+}
+.underheight{
+	background-color: #7F8567;
+	border: 0 solid #000;
+	vertical-align: top;
+}
+#window_minus_leftnav{
+	border: 0 solid #033;
+	max-height: 250px;
+	overflow: visible;
+}
+#bf_details{
+	background-image: url('//abuty.com/assets/abuty/images/whitetransparent.png');
+	margin: 0 0 2px 2px;
+}
+#bf_details_box label{
+	background-image: url('//abuty.com/assets/abuty/images/infobg.png');
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 6px;
+	/*font-size: 12px;
+	min-width: 160px;
+	*/
+}
+#bf_toolbar{
+	background-image: url('//abuty.com/assets/abuty/images/diagbgwhite.png');
+	border-bottom: 1px solid #CCC;
+	color: #000;
+	height: 24px;
+	width: auto;
+}
+.commpreview{
+	background-image: url('//abuty.com/assets/abuty/images/whitetransparent.png');
+	border: 1px solid #666;
+	color: #08215A;
+	display: block;
+	font-size: 12px;
+	height: 20px;
+	line-height: 1.5;
+	margin-left: 5px;
+	text-align: center;
+	webkit-border-bottom-right-radius: 8px;
+	webkit-border-top-left-radius: 8px;
+	width: 250px;
+}
+#bf_info{
+	background-image: url('//abuty.com/assets/abuty/images/infobg.png');
+	background-repeat: repeat-x;
+	display: inline;
+	width: 300px;
+}
+#bf_content_editor_container{
+	height:30em;
+	position:relative;
+	display:block;
+	z-index:2000000000;
+	margin:0;
+	padding:0;
+}
+#bf_content_editor_windows {
+	margin:0;
+	padding:0;
+}
+#bfPanels ul,#bf_details ul{
+	border: 1px dotted #ccc;
+	display: inline-block;
+	margin: 5px;
+	min-width: 260px;
+	vertical-align: top;
+}
+#bfControls {
+	padding-top: 6px;
+	background-color: #ffffffa8;
+}
+#bfPanel {
+	background-color: white;
+	border-bottom: 1px solid #7F8567;
+	border-bottom-left-radius: 11px;
+	border-bottom-right-radius: 11px;
+	border-left: 1px solid #7F8567;
+	border-right: 1px solid #7F8567;
+	width: auto;
+}
+
+#bfPanelInnerUIContainer {
+  all: unset;
+  display: table;
+  float: none;
+}
+
+#bfPanelNotice {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+	text-justify: inter-word;
+	display: table-cell;
+	float: none;
+	vertical-align: top;
+}
+
+#bfPanelNotice:first-child {
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 165px;
+	background-color: #f1f1f1;
+	border-right: 1px solid #9ca6bd;
+	text-align: justify;
+	text-justify: inter-word;
+	display: table-cell;
+	float: none;
+	vertical-align: top;
+	border-bottom-left-radius: 11px;
+}
+#bfPanelNotice:last-child {
+	padding: 0px;
+	border-left: 1px solid #9ca6bd;
+	text-align: justify;
+	background-color: #fff;
+	text-justify: inter-word;
+	display: table-cell;
+	float: none;
+	vertical-align: top;
+	border-bottom-right-radius: 11px;
+	margin-right: 1px;
+	bottom: 1px;
+}
+
+.bfPanelNoticeFullHeightRight {
+	position: absolute;
+    top: 56px;
+    right: 0px;
+    bottom: 25px;
+    width: 300px;
+}
+.bfPanelNoticeSmallUpperRight {
+	position: absolute;
+    top: 54px;
+    right: 0px;
+}
+
+#bfControlEditorLoad {
+	border: 1px solid #9ea28c;
+    background-color: #e9e9e9;
+    margin: 4px;
+	margin-left: 1px;
+    padding: 15px;
+    color: #900;
+	font-size: .825em;	
+}

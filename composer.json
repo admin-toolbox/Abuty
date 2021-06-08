@@ -1,0 +1,30 @@
+{
+    "name": "premoweb/abuty",
+    "description": "Abuty! Gives your Fat Free Framework additional superpowers.",
+    "homepage": "https://abuty.com/",
+    "type": "f3-plugin",
+    "require": {
+        "bcosca/fatfree-core": "^3.7.3",
+        "ikkez/f3-events": "^v1.0.2",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "delight-im/auth": "^v8.3.0"
+    },
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Nick Maietta",
+            "email": "nick@premoweb.com",
+            "homepage": "https://abuty.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "src/index.php"
+        ]
+    },
+    "config": {
+        "vendor-dir": "vendor/"
+    }
+}

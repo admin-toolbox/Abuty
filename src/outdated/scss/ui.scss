@@ -1,0 +1,219 @@
+@-webkit-keyframes slide {
+  0%   { transform: translate(0px,0px); }
+  100% { transform: translate(0px,50px); }
+}
+@-moz-keyframes slide {
+  0%   { transform: translate(0px,0px); }
+  100% { transform: translate(0px,0px); }
+}
+@-o-keyframes slide {
+  0%   { transform: translate(0px,0px); }
+  100% { transform: translate(0px,0px); }
+}
+@keyframes slide {
+  0%   { transform: translate(0px,-40px); }
+  100% { transform: translate(0px,0px); }
+}
+
+#bigfoot {
+	position: relative;
+	z-index: 2147483648;
+	#bfControlPanel {
+		animation-name: slide;
+		animation-fill-mode: forwards;
+		width: 98vw;
+		align-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		position: absolute;
+	}
+	a {
+		outline: 0;
+		user-select: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+	}
+	.idle {
+		background-image: url('//abuty.com/assets/abuty/images/status_bar_bg.png');
+		background-repeat: repeat-x;
+	}
+	.animated {
+		background-image: url('//abuty.com/assets/abuty/images/status_bar_bg_animated.gif');
+		background-repeat: repeat-x;
+	}
+	#bfBadge{
+		margin: 0 10px 0 10px;
+		padding: 0;
+		position: absolute;
+		animation-name: slide;
+		animation-fill-mode: forwards;
+		top: 5px;
+		.vertical{
+			height: 35px;
+			overflow: hidden;
+			position: relative;
+			width: 163px;
+		}
+	}
+	#bfStatusBar {
+		border-left: 1px solid #7F8567;
+		border-right: 1px solid #7F8567;
+		border-top: 1px solid #7F8567;
+	}
+	
+	ul#bfPrimaryTabs {
+		all:unset;
+		display: flex;
+	
+		white-space: nowrap;
+		padding-left: 185px;
+		li {
+			color: #08215A;
+			display: inline-block;
+			float: left;
+			padding: 1px 25px 0;
+			:hover{
+				color: #7F8567;
+				text-decoration: underline;
+			}
+			.bf_ui_seperator{
+				margin: 0 5px 0 0;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			.bf_ui_left{
+				border-left: 1px solid #666;
+				border-right: 1px solid #666;
+				border-top: 1px solid #666;
+				border-top-left-radius: 8px;
+				margin-right: 0!important;
+				moz-border-radius-topleft: 8px;
+				padding: 0 9px 0 18px;
+				webkit-border-top-left-radius: 8px;
+			}
+			.bf_ui_right{
+				border-left: 1px solid #666;
+				border-right: 1px solid #666;
+				border-top: 1px solid #666;
+				border-top-right-radius: 8px;
+				margin-right: 0!important;
+				moz-border-radius-topright: 8px;
+				padding: 0 18px 0 9px;
+				webkit-border-top-right-radius: 8px;
+			}
+			.bf_ui_middle{
+				border-left: 0px solid #666;
+				border-right: 1px solid #666;
+				border-top: 1px solid #666;
+				margin-left: 0!important;
+				padding: 0 9px;
+			}
+			.current{
+				background-color: #747b5aad;
+				cursor: default;
+				padding-bottom: 1px;
+				text-decoration: none;
+			}
+		}
+	}
+
+	ul#bfSecondaryTabs {
+		all:unset;
+		display: flex;
+		padding-top: 4px;
+		margin-left: 185px;
+		li {
+			background-image: url('//abuty.com/assets/abuty/images/whitetransparent.png');
+			color: #08215A;
+			display: inline-block;
+			float: left;
+			position: relative;
+			font-size: 1.125em;
+			a {
+				color: #FFF;
+				:hover{
+					color: #08215A;
+					text-decoration: none;
+				}
+			}
+
+			.bf_ui_left{
+				border-left: 1px solid #666;
+				border-right: 1px solid #666;
+				border-top: 1px solid #666;
+				border-top-left-radius: 8px;
+				margin-right: 0!important;
+				moz-border-radius-topleft: 8px;
+				padding: 0 9px 0 18px;
+				webkit-border-top-left-radius: 8px;
+			}
+			.bf_ui_right{
+				border-left: 0px solid #666;
+				border-right: 1px solid #666;
+				border-top: 1px solid #666;
+				border-top-right-radius: 8px;
+				margin-right: 0!important;
+				moz-border-radius-topright: 8px;
+				padding: 0 18px 0 9px;
+				webkit-border-top-right-radius: 8px;
+			}
+			.bf_ui_middle {
+				border-left: 0px solid #666;
+				border-right: 1px solid #666;
+				border-top: 1px solid #666;
+				margin-left: 0!important;
+				padding: 0 9px;
+			}
+			.bf_ui_help {
+				border-left: 1px solid #666;
+				border-right: 1px solid #666;
+				border-top: 1px solid #666;
+				border-top-left-radius: 8px;
+				border-top-right-radius: 8px;
+				moz-border-radius-topleft: 8px;
+				moz-border-radius-topright: 8px;
+				padding: 0 18px;
+				webkit-border-top-left-radius: 8px;
+				webkit-border-top-right-radius: 8px;
+			}
+			.bf_ui_seperator{
+				border: 0;
+				margin: 5px;
+			}
+			.current{
+				background-image: url('//abuty.com/assets/abuty/images/bluetransparent.png');
+				color: #FFF;
+				cursor: default;
+				padding-bottom: 1px;
+			}
+		}
+	}
+	.items {
+		border: 1px;
+		height: 100%;
+		margin: 0;
+		position: absolute;
+		width: 100%;
+	}
+
+}
+
+#bf_actions {
+	display: inline-block;
+	position: absolute;
+	width: 185px;
+	a {
+		color: #08215A;
+		cursor: pointer;
+		font-size: 11px;
+		padding-left: 11px;
+		padding-right: 8px;
+		:hover{
+			color: #000;
+			text-decoration: underline;
+		}
+	}
+}
+

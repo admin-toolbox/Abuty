@@ -1,0 +1,29 @@
+<div id="abuty" vpath="{{@requested_vpath}}">
+	<div id="abutyControlPanel">
+		<img id="abutyBadge"  src="//abuty.com/assets/abuty/images/branding166x35.png" width="166" height="35">
+		<div id="abutyControls">
+			<ul id="abutyPrimaryTabs">
+				<li class="abuty_ui_left"><a href="/{{@uuid}}/tab/content" class="fa fa-file-text 2x" title="Manage the content that is assigned to {{@requested_vpath}}"> Current Webpage</a></li>
+				<li class="abuty_ui_middle"><a href="/{{@uuid}}/tab/media" class="fa fa-file-image-o" title="Upload, delete and organize your Photos, Audio and Video."> Web Media</a></li>
+				<li class="abuty_ui_right"><a href="/{{@uuid}}/tab/files" class="fa fa-hdd-o" title="Upload, delete and organize your downloadable file."> File Storage</a></li>
+				<li class="abuty_ui_seperator"></li>
+				<li class="abuty_ui_left"><a href="/{{@uuid}}/tab/sitelevels" class="fa fa-map-signs" title="Map $sitelevel/* to software, set theme, security or distribution options."> Section / Area</a></li>
+				<li class="abuty_ui_right"><a href="/{{@uuid}}/tab/dynamics" class="fa fa-code"  title="Assign PHP scripts and HTML documents to div tags by id. (Really.)"> Dynamics Content</a></li>
+				<li class="abuty_ui_seperator"></li>
+				<li class="abuty_ui_left"><a href="/{{@uuid}}/tab/users" class="fa fa-users" title="Manage users in system"> User Manager</a></li>
+				<li class="abuty_ui_right"><a href="/{{@uuid}}/tab/system" class="fa fa-cogs"  title="View and manage system settings."> System Admin</a></li>
+				<li class="abuty_ui_seperator"></li>
+				<!-- <ul id="hotdrop" title="Drop your files here or click to open a dialog."></ul> -->
+			</ul>
+			<div id="abutyStatusBar" class="shadow idle">
+				<div id="abuty_actions"></div>
+			</div>
+		</div>
+		<div id="abutyPanel">
+			<p>Welcome to Abuty! You may select any tab to begin managing this website.</p>
+		</div>
+	</div>
+	<div class="abutyControlPanelAlwaysVisibleTrim">
+		<a id="abutyControlPanelToggle" class="open" aria-hidden="true">Open</a>
+	</div>	
+</div>

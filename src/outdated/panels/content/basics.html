@@ -1,0 +1,41 @@
+<div class="head">
+	<a id="abutyControlEditorLoad" class="fa fa-pencil fa-3x"> Load Editor</a>
+	Give this page some extra details
+</div>
+<div id="abutyPanelInnerUIContainer">
+	  <div id="abutyPanelNotice"><p><b>Note:</b> This information is used and presented by search engines to help people find your website and this resource, this should be done during the creation of this page.</p></div>
+	  
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="large-3 small-12 columns">
+					<label for="page_title" class="inline">Page title</label>
+				</div>
+				<div class="large-9 small-12 columns">
+					<input type="text" name="page_title" value="{{@page_title}}" placeholder="Untitled Document">
+				</div>	
+				<div class="large-3 columns">
+					<label for="keywords" class="right inline">Keywords</label>
+				</div>
+				<div class="large-9 small-12 columns">
+					<input type="text" name="keywords" value="{{@keywords}}" placeholder="Keyword1, Keyword2, etc.">
+				</div>
+			</div>
+
+			<div class="grid-x">
+				<div class="small-3 columns">
+					<label for="internal_path" class="inline">PHP Script</label>
+				</div>
+				<div class="small-9 columns">
+					<input type="text" maxlegth="75" name="internal_path" value="{{@internal_path}}" placeholder="/path/to/script.php">
+				</div>
+				<div class="small-3 columns">
+					<label for="description" class="inline">Description</label>
+				</div>
+				<div class="small-9 columns">
+					<textarea name="description" maxlength="255" placeholder="The first paragraph of this page will become the description of this page. Please enter in a description to avoid this default behavior.">{{@description}}</textarea>
+				</div>
+			</div>
+		</div>
+	  
+	  <div id="abutyPanelNotice" class="abutyPanelNoticeFullHeightRight">Optional PanelNotice with class "abutyPanelNoticeFullHeightRight". </div>
+</div>
