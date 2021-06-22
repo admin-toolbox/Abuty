@@ -16,26 +16,51 @@ class Abuty extends Prefab {
 
         $fw->set("CACHE", true);
         $fw->set("ONREROUTE", function(){ return true; }); // Disable SEO trailing slash redirect problem.
+        
+        $fw->set("QUIET", true);
 
         // Running with recommended dev mode environment flag?
         if ( isset($_SERVER['NODE_ENV']) && strtolower($_SERVER['NODE_ENV']) == "dev") {
+            $fw->set("DEV", true);
             $fw->set("CACHE", false);
-            // TODO: Setup optional local development database by swapping values of mysql production with dev version.
+            $fw->set("DEBUG", 3);
+            Falsum\Run::handler(true);
         }
-
-        $fw->set("QUIET", true);
-
-        // TODO: Rework this to be extendable.
+        
         $fw->set("ONERROR", function ($args) {
             // $TODO: Return true for Error 404, with content set.
             $fw = \Base::instance();
             $fw->set("ESCAPE", false);
             $fw->set("page_title", "Error " . $fw->get("ERROR.code"));
-            $fw->set("RESPONSE", "<pre>" . $fw->get("ERROR.text") . "\n" . $fw->get("ERROR.trace") . "</pre>");
+
+            // clear output buffer
+            while (ob_get_level()) ob_end_clean();
+
+            // Fancier error page
+            if ($fw->get('ERROR.code') == 500 && $fw->DEV && !$fw->CLI) {
+                Falsum\Run::handler(true);
+                $fw->call($fw->ONERROR, $fw);
+                exit();
+            }
+
+            if ($fw->AJAX) {
+                header("Content-Type: application/json");
+                die(json_encode(array('error'=>$fw->get('ERROR.text'))));
+
+            } elseif ($fw->CLI) {
+                print_r($fw->get('ERROR'));
+                exit();
+            } else {
+                $fw->set("content", "<p>".$fw->get("ERROR.text")."</p>");
+                $fw->set("RESPONSE", "<pre>" . $fw->get("ERROR.text") . "\n" . $fw->get("ERROR.trace") . "</pre>");
+            }
+
             $fw->set("UI", "Templates/");
             echo Template::instance()->render("default.html");
+
             return false;
         });
+        
 
         try {
             $this->dbh = new DB\SQL($fw->get("mysql.dsn"), $fw->get("mysql.user"), $fw->get("mysql.pass"), [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_PERSISTENT => false, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, ]);
@@ -100,7 +125,7 @@ class Abuty extends Prefab {
                 $fw->run();
             }
 
-            // Swap content for sandbox'ed supplied content (if available)
+            // Swap content for sandbox supplied content (if available)
             if ( file_exists($fw->ROOT . $this->content->internal_path) ) {
                 $ui = $fw->get("UI");
                 $fw->set("UI", "./");
